@@ -34,11 +34,13 @@ def black():
     root.configure(bg="black")
     blackButton.pack_forget()
     whiteButton.pack()
+    air.configure(bg="black")
 
 def white():
     root.configure(bg="white")
     whiteButton.pack_forget()
     blackButton.pack()
+    air.configure(bg="white")
 
 root = tk.Tk()
 root.title("")
@@ -47,6 +49,10 @@ root.configure(bg="white")
 
 startButton = tk.Button(root, text="start", command=displayRandomImage)
 startButton.pack()
+
+air = tk.Label(root)
+air.pack()
+air.configure(bg="white")
 
 label = tk.Label(root)
 label.pack()
